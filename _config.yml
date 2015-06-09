@@ -29,6 +29,6 @@ github:
   repo:              https://github.com/chrisflemming/chrisflemming.github.io
 
 # Pages to show in header
- pages_list:       
+pages_list:       
   About: '/about'
   Archive: '/archive'
