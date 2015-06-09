@@ -27,3 +27,8 @@ author:
 version:             1.0.0
 github:
   repo:              https://github.com/chrisflemming/chrisflemming.github.io
+
+# Pages to show in header
+ pages_list:       
+  About: '/about'
+  Archive: '/archive'
