@@ -35,7 +35,7 @@ twitter:
 # For use with jekyll SEO plugin
 social:
   name: Chris Flemming
-  links: [https://github.com/chrisflemming, https://au.linkedin.com/pub/chris-flemming/a/58a/653, https://twitter.com/chris_flemming]
+  links: ["https://github.com/chrisflemming", "https://au.linkedin.com/pub/chris-flemming/a/58a/653", "https://twitter.com/chris_flemming"]
 
 # Custom vars
 version:             1.0.0
