@@ -24,9 +24,8 @@ gems:
   - jekyll-gist
 
 # About/contact
-author:
-  name: Chris Flemming
-  url: http://cpf.id.au
+author: Chris Flemming
+url: http://cpf.id.au
 
 # For use with jekyll SEO plugin
 twitter:
