@@ -18,10 +18,24 @@ sass:
   sass_dir:          _sass
   style:            :compressed
 
+gems:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-gist
+
 # About/contact
 author:
   name:              Chris Flemming
   url:               http://cpf.id.au
+
+# For use with jekyll SEO plugin
+twitter:
+  username: chris_flemming
+
+# For use with jekyll SEO plugin
+social:
+  name: Chris Flemming
+  links: [https://github.com/chrisflemming, https://au.linkedin.com/pub/chris-flemming/a/58a/653, https://twitter.com/chris_flemming]
 
 # Custom vars
 version:             1.0.0
