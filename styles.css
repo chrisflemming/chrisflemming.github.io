@@ -18,4 +18,5 @@ header h1, .main-content h1 {
 }nav .navbar-brand {
     font-family: 'JetBrains Mono', sans-serif;
     font-weight: bold;
+    font-variant-ligatures: none;
 }
