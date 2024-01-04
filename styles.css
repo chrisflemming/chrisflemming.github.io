@@ -1,7 +1,21 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('JetBrainsMono-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+header h1, .main-content h1 {
+    font-family: 'JetBrains Mono', sans-serif;
+    font-weight: bold;
+}
 .main-content {
   padding: 3rem 1.5rem;
   text-align: center;
 }
 .social-icon {
 	padding: 10px;
+}nav .navbar-brand {
+    font-family: 'JetBrains Mono', sans-serif;
+    font-weight: bold;
 }
