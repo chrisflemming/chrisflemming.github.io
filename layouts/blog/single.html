@@ -1,0 +1,33 @@
+{{ partial "head.html" . }}
+
+
+<main role="main" class="container">
+  <div class="main-content">
+
+    <div class="container text-left">
+      <div class="row align-items-start">
+        <div class="col">
+          <h1 class="fw-normal">{{ .Title }}</h1>
+
+          <h3 class="fw-normal">{{ .Params.subtitle }}</h2>
+        </div>
+        <div class="col">
+          {{ $image := .Resources.Get .Params.headerImageFile }}
+          {{ if not $image }}
+            <p>Image not found: {{ .Params.headerImageFile }}</p>
+          {{ else }}
+            {{ $image := $image.Resize "780x780" }}
+            <img src="{{ $image.Permalink }}" alt="{{ .Params.headerImageCaption }}" class="img-fluid">
+          {{ end }}
+        </div>
+      </div>
+    </div>
+
+    <div class="container border-top border-dark mt-4 pt-4">
+      <h5 class="fw-normal">{{ .Date.Format "January 2, 2006" }}</h2>
+      {{ .Content }} 
+    </div>
+  </div>
+</main>
+
+{{ partial "footer.html" . }}

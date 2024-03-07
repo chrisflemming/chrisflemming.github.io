@@ -1,0 +1,4 @@
+baseURL = 'https://chrisflemming.com/'
+languageCode = 'en-us'
+title = 'Chris Flemming'
+pluralizelisttitles = false
