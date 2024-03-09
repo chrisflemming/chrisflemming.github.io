@@ -9,17 +9,23 @@
         <a href="{{ .Permalink }}">
           <div class="container text-left">
             <div class="row align-items-start">
-              <div class="col">
-                <h4>{{ .Title }}</h2>
-                  {{ .Params.subtitle }}
-                  {{ .Date.Format "January 2, 2006" }}
+              <div class="col align-self-center">
+                <div class="container text-left">
+                  <div class="row fs-3">
+                    {{ .Title }}
+                  </div>
+                  <div class="row fw-light">
+                    {{ .Params.subtitle }}
+                  </div>
+                  <div class="row pt-4">
+                    {{ .Date.Format "2 January 2006" }}
+                  </div>
+                </div>
               </div>
               <div class="col">
-                <img src="{{ .RelPermalink }}{{ .Params.headerImageFile }}" alt="{{ .Params.headerImageCaption }}"
-                  style="width: 100px; height: auto;">
+                <img src="{{ .RelPermalink }}{{ .Params.headerImageFile }}" alt="{{ .Params.headerImageCaption }}">
               </div>
             </div>
-          </div>
         </a>
     </article>
   </div>

@@ -23,6 +23,7 @@
 
 article img {
   border-radius: 10%;
+  width: 200px;
 }
 
 nav .navbar-brand {
