@@ -1,0 +1,36 @@
+{{ partial "head.html" . }}
+
+
+<main role="main" class="container-fluid">
+  <div class="main-content">
+
+    <div class="container text-left">
+      <div class="row align-items-start">
+        <div class="col-12 col-md">
+          <h1 class="fw-semibold">{{ .Title }}</h1>
+          <h3 class="fw-lighter">{{ .Params.subtitle }}</h2>
+        </div>
+        <div class="col-12 col-md">
+          {{ $image := .Resources.Get .Params.headerImageFile }}
+          {{ if $image }}
+          <img src="{{ $image.Permalink }}" alt="{{ .Params.headerImageCaption }}" class="img-fluid" style="max-width: 500px" />
+          {{ end }}
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid border-top border-dark mt-4 pt-4 text-left">
+      <h5 class="fw-normal">{{ .Date.Format "2 January 2006" }}</h2>
+        <div class="container mt-4 pt-4">
+          <div class="row align-items-start">
+            <!-- Using col-md-8 for content to make it skinnier and centered, adjust as needed -->
+            <div class="col-md-8">
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</main>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,21 @@
+{{ partial "head.html" . }}
+
+  <main role="main" class="container">
+    <div class="main-content">
+      <div class="row">
+        <div class="col align-self-center">
+          <h1 class="fw-semibold">{{ .Title }}</h1>
+        </div>
+        <div class="col">
+          <img src="/black-mountain.jpg" alt="Black Mountain" class="img-fluid">
+        </div>
+
+        <div class="row pt-5 mt5">
+          <div class="col-md-8">
+            {{ .Content }}
+          </div>
+        </div>
+    </div>
+  </main>
+
+{{ partial "footer.html" . }}
