@@ -13,7 +13,7 @@
         <div class="col-12 col-md">
           {{ $image := .Resources.Get .Params.headerImageFile }}
           {{ if $image }}
-          <img src="{{ $image.Permalink }}" alt="{{ .Params.headerImageCaption }}" class="img-fluid" style="max-width: 500px" />
+          <img src="{{ $image.Permalink }}" alt="{{ .Params.headerImageCaption }}" class="img-fluid" />
           {{ end }}
         </div>
       </div>
