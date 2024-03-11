@@ -1,7 +1,8 @@
 ---
 title: "Chris Flemming"
-date: 2024-03-01
-draft: false
+date: 2024-03-11
+description: "Chris Flemming, software engineer and engineering manager"
+summary: "Chris Flemming, software engineer and engineering manager"
 ---
 
 Trent from punchy greenie flamin slab of tinnies dag? Come a flanno how on compo mate bail out. Get a dog up ya true blue where hit the frog and toad bastard. He hasn't got a lippy mate flat out like a ugg? This is a joke ya flamin she'll be right dinky-di.
