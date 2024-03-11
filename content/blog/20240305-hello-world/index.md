@@ -4,7 +4,7 @@
     "date": "2024-03-01",
     "params" : {
         "subtitle": "Trying my best to get this thing working",
-        "headerImageFile": "image.png",
+        "headerImageFile": "image.jpg",
         "headerImageCaption": "A ducky techno-optimist future"
     }
 }
