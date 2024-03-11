@@ -1,5 +1,6 @@
 {
     "title": "Hello, world!",
+    "description": "Trying my best to get this thing working",
     "date": "2024-03-01",
     "params" : {
         "subtitle": "Trying my best to get this thing working",
