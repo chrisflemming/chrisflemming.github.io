@@ -21,6 +21,10 @@
   text-decoration: none;
 }
 
+.blog-text {
+  border-top : 1px solid #212529;
+}
+
 article img {
   border-radius: 10%;
   width: 200px;
@@ -32,4 +36,25 @@ nav .navbar-brand {
     font-style: normal;
     font-variant-ligatures: none;
     font-size: 1.2em;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+
+  .main-content a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .border-top {
+    border-top: 1px solid #333;
+  }
+
+  .blog-text {
+    border-top: 1px solid #495057;
+  }
+
+  svg {
+    fill: white;
+  }
 }
