@@ -3,17 +3,26 @@
   <main role="main" class="container">
     <div class="main-content">
       <div class="row">
-        <div class="col-12 col-md align-self-center">
-          <h1 class="fw-semibold">{{ .Title }}</h1>
-        </div>
-        <div class="col-12 col-md">
-          <img src="/black-mountain.jpg" alt="Black Mountain" class="img-fluid">
+        <div class="col-12 col-md-6 align-self-center"> <!-- Modify the class to col-md-6 -->
+          <div class="row">
+            <h2 class="fw-semibold">Hi</h2>
+          </div>
         </div>
 
-        <div class="row pt-5 mt5">
-          <div class="col-md-8">
+        <div class="col-12 col-md-6">
+            <img src="/black-mountain.jpg" alt="Black Mountain" class="img-fluid w-75 float-md-end">
+        </div>
+
+        <div class="row fs-4 gy-4">
+          <div class="col-12 col-md-6"> 
             {{ .Content }}
           </div>
+          <div class="col-12 col-md-6 text-md-end">
+            <p><a href="https://www.linkedin.com/in/chrisflemming/">LinkedIn /in/chrisflemming</a></p>
+            <p><a href="https://github.com/chrisflemming">GitHub @chrisflemming</a></p>
+            <p><a href="https://twitter.com/chris_flemming">Twitter @chris_flemming</a><p>
+            <p><a href="https://www.instagram.com/chrisflemming_/">Instagram @chrisflemming_</a><p>
+            <p>Email --insert here--</p>
         </div>
     </div>
   </main>

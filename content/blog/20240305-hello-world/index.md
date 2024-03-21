@@ -9,6 +9,8 @@
     }
 }
 
+This is a dummy blog post that is here while I finalise the design of the site. Check back soon for fascinating content. Filler text is from [Bogan Ipsum](https://boganipsum.com.au/).
+
 As cunning as a frog in a sock also come a give it a burl. Get a dog up ya bastard no dramas built like a sickie. We're going schooner bloody come a spit the dummy? He's got a massive bushie mate flat out like a rack off. Just chuck her in the ute g'day to mad as a perve. This is a joke mate's rate heaps he's got a massive mickey mouse mate. Get a dog up ya too right! to on compo mate jug.
 
 Here is some code:
@@ -36,9 +38,10 @@ fetchCanberraCurrentTemperature()
 
 Ciggie butt brain metho heaps mad as a booze. Flat out like a larrikin piece of piss get on the cans rapt. Stands out like a rock up piece of piss built like a gobsmacked? Watch out for the corker no dramas she'll be right ocker? Gutful of mate with as dry as a slaps? Mad as a troppo heaps flat out like a dead horse. Just chuck her in the ute bail up and gutful of rotten. Pocket me lighter barrack also just chuck her in the ute barrack? She'll be right cockie no dramas get a dog up ya butcher.
 
-This is a joke arvo piece of piss she'll be right bonzer. As cross as a gyno bloody lets throw a cark it? Trent from punchy you're shout how as cunning as a cockie. As busy as a smoko piece of piss pocket me lighter bush oyster. Hit the frog and toad show pony with as cunning as a grundies? Pocket me lighter barrack my she'll be right divvy van. Flat out like a nipper flamin she'll be right offsider. Mad as a old fella bloody mad as a rort.
-
-Lets get some booze bus no dramas she'll be right bush bash? Shazza got us some dag mate lets throw a budgie smugglers. As busy as a trackies piece of piss trent from punchy pokies. As cunning as a snag no dramas come a bonza. She'll be right cat burying shit to on compo mate gobful.
+Here is a blockquote:
+> This is a joke arvo piece of piss she'll be right bonzer. As cross as a gyno bloody lets throw a cark it? Trent from punchy you're shout how as cunning as a cockie. As busy as a smoko piece of piss pocket me lighter bush oyster. Hit the frog and toad show pony with as cunning as a grundies? Pocket me lighter barrack my she'll be right divvy van. Flat out like a nipper flamin she'll be right offsider. Mad as a old fella bloody mad as a rort.
+>
+> Lets get some booze bus no dramas she'll be right bush bash? Shazza got us some dag mate lets throw a budgie smugglers. As busy as a trackies piece of piss trent from punchy pokies. As cunning as a snag no dramas come a bonza. She'll be right cat burying shit to on compo mate gobful.
 
 Come a troppo bloody as dry as a swagger. Hit the frog and toad chuck a sickie to just chuck her in the ute bizzo. Grab us a bail out to mad as a mate's rate. Ciggie butt brain slab my as cross as a pretty spiffy? It'll be bail up how we're going scratchy. Watch out for the bluey no worries come a apples. It'll be budgie smugglers with we're going dinky-di? Grab us a dinky-di no dramas built like a g'day. As stands out like stubby holder to this is a joke dag.
 
