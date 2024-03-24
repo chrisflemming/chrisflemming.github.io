@@ -24,11 +24,11 @@ a:visited {
   text-decoration: none;
 }
 
-a:hover {
+.social-link:hover {
   text-decoration: underline;
 }
 
-a:active {
+.social-link:active {
   text-decoration: underline;
 }
 
@@ -49,6 +49,13 @@ nav .navbar-brand {
     font-size: 1.2em;
 }
 
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
 /* Dark mode styles */
 @media (prefers-color-scheme: dark) {
 
@@ -66,5 +73,12 @@ nav .navbar-brand {
 
   svg {
     fill: white;
+  }
+
+  blockquote {
+    background: #333; /* Darker background for dark mode */
+    border-left: 10px solid #555; /* Slightly lighter border color for contrast */
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
   }
 }
