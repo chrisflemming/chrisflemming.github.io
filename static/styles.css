@@ -24,6 +24,18 @@ a:visited {
   text-decoration: none;
 }
 
+.blog-text a {
+  color: #0d6efd;
+}
+
+.blog-text a:hover {
+  text-decoration: underline;
+}
+
+.blog-text a:active{
+  text-decoration: underline;
+}
+
 .social-link:hover {
   text-decoration: underline;
 }
