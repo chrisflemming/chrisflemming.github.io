@@ -18,16 +18,21 @@
       </div>
     </div>
 
-    <div class="blog-text container-fluid mt-4 pt-4 text-left">
-      <h5 class="fw-normal">{{ .Date.Format "2 January 2006" }}</h2>
+    <div class="blog-text container-fluid mt-4 pt-4">
+      <div class="container text-left">
+        <div class="row align-items-start">
+          <div class="col-12 col-md">
+            <h5 class="fw-normal">{{ .Date.Format "2 January 2006" }}</h5>
+          </div>
+        </div>
         <div class="container mt-4 pt-4">
-          <div class="row align-items-start">
-            <!-- Using col-md-8 for content to make it skinnier and centered, adjust as needed -->
-            <div class="col-md-8">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 text-left">
               {{ .Content }}
             </div>
           </div>
         </div>
+      </div>
     </div>
   </div>
 </main>
