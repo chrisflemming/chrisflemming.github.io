@@ -1,8 +1,9 @@
 body {
   font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 @supports (font-variation-settings: normal) {
-  body { font-family: Inter, sans-serif; }
+  body { font-family: InterVariable, sans-serif; }
 }
 
 .main-content {
@@ -36,11 +37,15 @@ a:visited {
   text-decoration: underline;
 }
 
-.social-link:hover {
+.social-link a {
+  color: #0d6efd;
+}
+
+.social-link a:hover {
   text-decoration: underline;
 }
 
-.social-link:active {
+.social-link a:active{
   text-decoration: underline;
 }
 
@@ -57,7 +62,16 @@ nav .navbar-brand {
     font-weight: 400;
     font-style: normal;
     font-variant-ligatures: none;
+    font-feature-settings: normal;
     font-size: 1.2em;
+}
+
+pre code {
+  font-family: JetBrains Mono;
+  font-weight: 400;
+  font-style: normal;
+  font-variant-ligatures: none;
+  font-feature-settings: normal;
 }
 
 blockquote {
@@ -65,6 +79,10 @@ blockquote {
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
+}
+
+span.email b {
+	display: none;
 }
 
 /* Dark mode styles */
