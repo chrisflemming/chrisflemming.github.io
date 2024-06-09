@@ -66,6 +66,10 @@ nav .navbar-brand {
     font-size: 1.2em;
 }
 
+nav li {
+  text-align: center;
+}
+
 pre code {
   font-family: JetBrains Mono;
   font-weight: 400;
@@ -87,6 +91,10 @@ span.email b {
 
 /* Dark mode styles */
 @media (prefers-color-scheme: dark) {
+
+  body {
+    background-color: #000;
+  }
 
   a {
     color: white;
