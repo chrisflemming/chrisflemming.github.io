@@ -6,7 +6,8 @@
         "subtitle": "Trying my best to get this thing working",
         "headerImageFile": "image.jpg",
         "headerImageCaption": "A ducky techno-optimist future"
-    }
+    },
+    "draft": true
 }
 
 This is a dummy blog post that is here while I finalise the design of the site. Check back soon for fascinating content. Filler text is from [Bogan Ipsum](https://boganipsum.com.au/).

@@ -1,0 +1,33 @@
+{{ partial "head.html" . }}
+
+<main>
+  <div class="main-content" class="container">
+    <h1 class="fw-medium ps-5 d-none d-md-block">{{ .Title }}</h1>
+    {{ range .Pages }}
+    <article>
+      <div class="container border-bottom mb-4 pb-4">
+        <a href="{{ .Permalink }}">
+          <div class="container text-left">
+            <div class="row align-items-start">
+              <div class="col-8 align-self-center">
+                <div class="container text-left">
+                  <div class="row fs-3 fw-medium">
+                    {{ .Title }}
+                  </div>
+                  <div class="row fw-light">
+                    {{ .Params.subtitle }}
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <img class="img-fluid w-75" src="{{ .RelPermalink }}{{ .Params.headerImageFile }}" alt="{{ .Params.headerImageCaption }}">
+              </div>
+            </div>
+        </a>
+      </div>
+    </article>
+  {{ end }}
+  </div>
+</main>
+
+{{ partial "footer.html" . }}

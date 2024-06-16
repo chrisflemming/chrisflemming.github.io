@@ -25,15 +25,27 @@ a:visited {
   text-decoration: none;
 }
 
-.blog-text a {
+.bio-text a {
   color: #0d6efd;
 }
 
-.blog-text a:hover {
+.bio-text a:hover {
   text-decoration: underline;
 }
 
-.blog-text a:active{
+.bio-text a:active{
+  text-decoration: underline;
+}
+
+.blog-body a {
+  color: #0d6efd;
+}
+
+.blog-body a:hover {
+  text-decoration: underline;
+}
+
+.blog-body a:active{
   text-decoration: underline;
 }
 
@@ -49,8 +61,21 @@ a:visited {
   text-decoration: underline;
 }
 
+.blog-body {
+  border-top : 1px solid #DEE2E6;
+  font-size: 18px;
+}
+
+.blog-body img {
+  display: block;
+  max-width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .blog-text {
-  border-top : 1px solid #212529;
+  font-size: 18px;
 }
 
 article img {
@@ -104,7 +129,7 @@ span.email b {
     border-top: 1px solid #333;
   }
 
-  .blog-text {
+  .blog-body {
     border-top: 1px solid #495057;
   }
 

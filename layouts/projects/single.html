@@ -4,30 +4,27 @@
 <main role="main" class="container-fluid">
   <div class="main-content">
     <div class="container text-left">
-      <div class="row align-items-start">
+      <div class="row justify-content-between">
         <div class="col-12 col-md">
           <h1 class="fw-medium">{{ .Title }}</h1>
           <h3 class="fw-lighter">{{ .Params.subtitle }}</h2>
         </div>
         <div class="col-12 col-md">
-          {{ $image := .Resources.Get .Params.headerImageFile }}
-          {{ if $image }}
-          <img src="{{ $image.Permalink }}" alt="{{ .Params.headerImageCaption }}" class="img-fluid" />
-          {{ end }}
+          <div class="text-center">
+            {{ $image := .Resources.Get .Params.headerImageFile }}
+            {{ if $image }}
+            <img src="{{ $image.Permalink }}" alt="{{ .Params.headerImageCaption }}" class="img-fluid" />
+            {{ end }}
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="blog-body container-fluid mt-4 pt-4">
+    <div class="blog-body container-fluid mt-4 pt-4 px-0">
       <div class="container text-left">
-        <div class="row align-items-start">
-          <div class="col-12 col-md">
-            <h5 class="fw-normal">{{ .Date.Format "2 January 2006" }}</h5>
-          </div>
-        </div>
-        <div class="mt-4 pt-4">
+        <div class="container">
           <div class="row align-items-center justify-content-center">
-            <div class="col-md-7 text-left blog-text px-0">
+            <div class="col-md-7 text-left blog-text mt-4 pt-4 px-0">
               {{ .Content }}
             </div>
           </div>
