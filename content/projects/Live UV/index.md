@@ -1,13 +1,12 @@
 {
     "title": "Live UV",
-    "description": "A simple mobile application showing live UV index data for Australian capital cities and selected major centres",
+    "description": "A simple mobile application showing live UV index data for Australian capital cities and selected regional centres",
     "date": "2024-06-15",
     "params" : {
-        "subtitle": "A simple mobile application showing live UV index data for Australian capital cities and selected major centres",
+        "subtitle": "A simple mobile application showing live UV index data for Australian capital cities and selected regional centres",
         "headerImageFile": "icon_square.svg",
         "headerImageCaption": "Live UV app icon"
-    },
-    "draft": true
+    }
 }
 
 ![Download on the App Store](app_store_badge.svg)
@@ -26,3 +25,6 @@ The Australian Radiation Protection and Nuclear Safety Agency (ARPANSA) have a f
 I wanted an easy way to refer to ARPANSA's data while on the go so I've written Live UV. This is a simple mobile application developed using React Native which will give you the latest UV index reading for the selected location. You can use this app to determine when it is safe to be outside in the sun. I hope you find it useful.
 
 The code is open source, check out the [github repository](https://github.com/chrisflemming/LiveUVApp) if you're interested.
+
+#### Privacy Policy {#privacy}
+The Live UV app does not collect or store any data from users.
