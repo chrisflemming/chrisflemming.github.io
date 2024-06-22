@@ -4,7 +4,7 @@
     "date": "2024-06-15",
     "params" : {
         "subtitle": "A simple mobile application showing live UV index data for Australian capital cities and selected regional centres",
-        "headerImageFile": "icon_square.svg",
+        "headerImageFile": "icon_square.png",
         "headerImageCaption": "Live UV app icon"
     }
 }
