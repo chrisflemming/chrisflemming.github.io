@@ -14,5 +14,5 @@ width="300" height="300" viewBox="-30 -30 60 60" fill="#fcdf03">
   <use xlink:href="#y" transform="rotate(240)"/>
   <use xlink:href="#y" transform="rotate(300)"/></g>
   <circle stroke="blue" stroke-width="1" r="16"/>
-  <text x="0" y="1" font-family="InterVariable" font-size="14" fill="blue" text-anchor="middle" alignment-baseline="middle">UV</text>
+  <text x="0" y="1" font-family="Helvetica" font-size="14" fill="blue" text-anchor="middle" alignment-baseline="middle">UV</text>
 </svg>
