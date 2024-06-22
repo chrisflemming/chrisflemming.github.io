@@ -1,5 +1,5 @@
 body {
-  font-family: Inter, sans-serif;
+  font-family: InterVariable, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 @supports (font-variation-settings: normal) {
@@ -83,7 +83,7 @@ article img {
 }
 
 nav .navbar-brand {
-    font-family: JetBrains Mono;
+    font-family: "JetBrains Mono", monospace;
     font-weight: 400;
     font-style: normal;
     font-variant-ligatures: none;
@@ -96,7 +96,7 @@ nav li {
 }
 
 pre code {
-  font-family: JetBrains Mono;
+  font-family: "JetBrains Mono", monospace;
   font-weight: 400;
   font-style: normal;
   font-variant-ligatures: none;
