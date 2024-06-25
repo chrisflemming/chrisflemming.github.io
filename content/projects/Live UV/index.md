@@ -9,10 +9,9 @@
     }
 }
 
-![Download on the App Store](app_store_badge.svg)
+[![Download on the App Store](app_store_badge.svg)](https://apps.apple.com/au/app/live-uv/id6504560554)
 
-![Download on the Google Play Store](google_play_badge.png)
-
+*Android version is currently undergoing testing - please contact (see contact details on the root page of this site) if you are interested in testing the Android version*
 
 In Australia we have the highest rate of skin cancer in the world. The sun, especially in summer, has an intensity that many people from the Northern Hemisphere would never have experienced. 
 
