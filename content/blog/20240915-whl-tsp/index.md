@@ -5,7 +5,7 @@
     "params" : {
         "subtitle": "Probably not",
         "headerImageFile": "image.png",
-        "headerImageCaption": "A ducky techno-optimist future"
+        "headerImageCaption": "A futuristic style map"
     }
 }
 
