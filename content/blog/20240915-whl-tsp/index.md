@@ -11,7 +11,7 @@
 
 A friend who loves to travel posed an interesting question - would it be possible to visit all of the UNESCO World Heritage Sites in a single year. This had the potential to be a fun coding exercise, so I set to work.
 
-First, I needed to load data about all of the sites on the World Heritage List including their precise locations. Fortunately this data is provided on the UNESCO website in a number of formats including XML.
+First, we need to load data about all of the sites on the World Heritage List including their precise locations. Fortunately this data is provided on the UNESCO website in a number of formats including XML.
 
 
 ```python {linenos=inline}
@@ -68,7 +68,7 @@ With the distances in hand, we now need to calculate the shortest route that can
 
 Google's [OR-Tools](https://developers.google.com/optimization) library provides a powerful set of tools for solving optimisiation problems, including travelling salesman problems (see <https://developers.google.com/optimization/routing/tsp>), so we'll use that.
 
-Given the Travelling salesman problem is an NP-Hard problem, it's not feasible to find an exact optimal solution. For this reason, we'll let OR-Tools run for 20 minutes, getting the best route it could find in that amount of time.
+Given the Travelling salesman problem is an NP-Hard problem, it's not feasible to find an exact optimal solution. For this reason, we'll let OR-Tools run for 20 minutes, getting the best route it can find in that amount of time.
 
 
 ```python {linenos=inline}
@@ -225,7 +225,7 @@ fig.show()
 
 ![WHL Route Map](whl_tsp_route.png)
 
-Looks great! From the map and total distance, my gut feeling is that isn't feasible to do in the space of one year. Let's try validating that with some back-of-the-envelope calculations.
+Looks great! From the map and total distance, my gut feeling is that it isn't feasible to do in the space of one year. Let's try validating that with some back-of-the-envelope calculations.
 
 Let's assume you need seven hours of sleep per night, and another three hours per day for meals and other miscellaneous activities. Let's also assume that you want to spend a minimum of three hours at each site to take it in - this doesn't seem like enough, but would be the bare minimum. Travel time is a difficult one. Commercial passenger jets cruise at speeds of around 950 km/h, surface-based transport is much slower than this of course. Let's assume an average travel time of 200 km/h, this still seems high but we have to make do.
 
