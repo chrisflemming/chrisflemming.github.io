@@ -255,4 +255,4 @@ So there you have it. It would take over a year, and that's if you're someone wi
 
 A more realistic goal would be to go on a trip where you can visit as many sites as possible. As you can easily see from the map, Europe is the standout option here, especially when you consider transport infrastructure and the ease of travel through the Schengen Area. In fact the World Heritage List has been [criticised](https://theconversation.com/world-heritage-site-selection-is-eurocentric-and-that-shapes-which-historic-places-get-love-and-money-115898) for being overly Eurocentric. The Middle East and parts of Asia are also good options.
 
-The Juypter notebook I just to generate this is available [here](https://gist.github.com/chrisflemming/7738adebca03a50476cd8da58e719723) as a GitHub Gist.
+The Juypter notebook I used to generate this is available [here](https://gist.github.com/chrisflemming/7738adebca03a50476cd8da58e719723) as a GitHub Gist.
