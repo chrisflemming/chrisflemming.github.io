@@ -23,31 +23,34 @@
                 </div>
               </div>
               <div class="col-4">
-                {{ with .Resources.Get .Params.headerImageFile }}
-                  {{ $thumb200 := .Resize "200x webp" }}
-                  {{ $thumb400 := .Resize "400x webp" }}
-                
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="
-                        {{ $thumb200.RelPermalink }} {{ $thumb200.Width }}w,
-                        {{ $thumb400.RelPermalink }} {{ $thumb400.Width }}w"
-                      sizes="200px">
-                
-                    <img
-                      src="{{ $thumb200.RelPermalink }}"
-                      srcset="
-                        {{ $thumb200.RelPermalink }} {{ $thumb200.Width }}w,
-                        {{ $thumb400.RelPermalink }} {{ $thumb400.Width }}w"
-                      sizes="200px"
-                      width="{{ $thumb200.Width }}"
-                      height="{{ $thumb200.Height }}"
-                      loading="lazy"
-                      alt="{{ .Params.headerImageCaption }}"
-                      style="width:200px; height:auto;">
-                  </picture>
-                {{ end }}
+              {{ with .Resources.Get .Params.headerImageFile }}
+                {{/* 1× (200 px) & 2× (400 px) WebP */}}
+                {{ $thumb200 := .Resize  "200x webp" }}
+                {{ $thumb400 := .Resize  "400x webp" }}
+    
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      {{ $thumb200.RelPermalink }} {{ $thumb200.Width  }}w,
+                      {{ $thumb400.RelPermalink }} {{ $thumb400.Width  }}w"
+                    sizes="(max-width: 576px) 33vw, (max-width: 768px) 25vw, 200px">                  
+    
+                  <img
+                    class="img-fluid"
+                    src="{{ $thumb200.RelPermalink }}"
+                    srcset="
+                      {{ $thumb200.RelPermalink }} {{ $thumb200.Width  }}w,
+                      {{ $thumb400.RelPermalink }} {{ $thumb400.Width  }}w"
+                    sizes="(max-width: 576px) 33vw,
+                           (max-width: 768px) 25vw,
+                           200px"
+                    width="{{ $thumb200.Width }}"
+                    height="{{ $thumb200.Height }}"
+                    loading="lazy"
+                    alt="{{ .Params.headerImageCaption }}">
+                </picture>
+              {{ end }}
               </div>
             </div>
         </a>
