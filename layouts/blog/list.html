@@ -23,7 +23,31 @@
                 </div>
               </div>
               <div class="col-4">
-                <img class="img-fluid w-75" src="{{ .RelPermalink }}{{ .Params.headerImageFile }}" alt="{{ .Params.headerImageCaption }}">
+                {{ with .Resources.Get .Params.headerImageFile }}
+                  {{ $thumb200 := .Resize "200x webp" }}
+                  {{ $thumb400 := .Resize "400x webp" }}
+                
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        {{ $thumb200.RelPermalink }} {{ $thumb200.Width }}w,
+                        {{ $thumb400.RelPermalink }} {{ $thumb400.Width }}w"
+                      sizes="200px">
+                
+                    <img
+                      src="{{ $thumb200.RelPermalink }}"
+                      srcset="
+                        {{ $thumb200.RelPermalink }} {{ $thumb200.Width }}w,
+                        {{ $thumb400.RelPermalink }} {{ $thumb400.Width }}w"
+                      sizes="200px"
+                      width="{{ $thumb200.Width }}"
+                      height="{{ $thumb200.Height }}"
+                      loading="lazy"
+                      alt="{{ .Params.headerImageCaption }}"
+                      style="width:200px; height:auto;">
+                  </picture>
+                {{ end }}
               </div>
             </div>
         </a>

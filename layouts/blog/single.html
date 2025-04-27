@@ -10,10 +10,42 @@
           <h3 class="fw-lighter">{{ .Params.subtitle }}</h2>
         </div>
         <div class="col-12 col-md">
-          {{ $image := .Resources.Get .Params.headerImageFile }}
-          {{ if $image }}
-          <img src="{{ $image.Permalink }}" alt="{{ .Params.headerImageCaption }}" class="img-fluid" />
-          {{ end }}
+          {{ with .Resources.Get .Params.headerImageFile }}
+          {{ $orig := . }}
+        
+          <!-- JPEG fallbacks -->
+          {{ $smallJpeg  := $orig.Resize "400x" }}    <!-- 400px-wide JPG -->
+          {{ $mediumJpeg := $orig.Resize "800x" }}    <!-- 800px-wide JPG -->
+          {{ $largeJpeg  := $orig.Resize "1024x" }}   <!-- 1024px-wide JPG -->
+        
+          <!-- WebP versions -->
+          {{ $smallWebp  := $orig.Resize "400x webp" }}   <!-- 400px-wide WebP -->
+          {{ $mediumWebp := $orig.Resize "800x webp" }}   <!-- 800px-wide WebP -->
+          {{ $largeWebp  := $orig.Resize "1024x webp" }}  <!-- 1024px-wide WebP -->
+        
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                {{ $smallWebp.RelPermalink  }} {{ $smallWebp.Width  }}w,
+                {{ $mediumWebp.RelPermalink }} {{ $mediumWebp.Width }}w,
+                {{ $largeWebp.RelPermalink  }} {{ $largeWebp.Width  }}w"
+              sizes="(max-width: 767px) 100vw, (max-width: 1199px) 80vw, 1024px">
+        
+            <img
+              src="{{ $mediumJpeg.RelPermalink }}"
+              srcset="
+                {{ $smallJpeg.RelPermalink  }} {{ $smallJpeg.Width  }}w,
+                {{ $mediumJpeg.RelPermalink }} {{ $mediumJpeg.Width }}w,
+                {{ $largeJpeg.RelPermalink  }} {{ $largeJpeg.Width  }}w"
+              sizes="(max-width: 767px) 100vw, (max-width: 1199px) 80vw, 1024px"
+              class="img-fluid"
+              alt="{{ .Params.headerImageCaption }}"
+              loading="lazy"
+              width="{{ $largeJpeg.Width }}"
+              height="{{ $largeJpeg.Height }}">
+          </picture>
+        {{ end }}
         </div>
       </div>
     </div>
