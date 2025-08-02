@@ -25,18 +25,6 @@ a:visited {
   text-decoration: none;
 }
 
-.bio-text a {
-  color: #0d6efd;
-}
-
-.bio-text a:hover {
-  text-decoration: underline;
-}
-
-.bio-text a:active{
-  text-decoration: underline;
-}
-
 .blog-body a {
   color: #0d6efd;
 }
@@ -49,15 +37,11 @@ a:visited {
   text-decoration: underline;
 }
 
-.social-link a {
-  color: #0d6efd;
-}
-
-.social-link a:hover {
+.homepage-link a:hover {
   text-decoration: underline;
 }
 
-.social-link a:active{
+.homepage-link a:active{
   text-decoration: underline;
 }
 
@@ -113,6 +97,11 @@ blockquote {
 
 span.email b {
 	display: none;
+}
+
+/* List item hover effects */
+.list-item:hover .item-title {
+  text-decoration: underline;
 }
 
 /* Dark mode styles */

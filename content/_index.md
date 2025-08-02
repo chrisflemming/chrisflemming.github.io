@@ -5,6 +5,6 @@ description: "Chris Flemming, software engineer and engineering manager"
 summary: "Chris Flemming, software engineer and engineering manager"
 ---
 
-I am a software engineer and engineering manager based in Australia. I'm interested in technology, data, geopolitics, climate and finance.
+I'm a software engineer and engineering manager based in Australia. I build effective, motivated teams and high-quality software.
 
-Checkout my [blog](/blog), and my [projects](/projects).
+Interests: AI, data, geopolitics, climate, finance.
