@@ -79,6 +79,10 @@ nav li {
   text-align: center;
 }
 
+nav .nav-item .nav-link.active {
+  font-weight: 500;
+}
+
 pre code {
   font-family: "JetBrains Mono", monospace;
   font-weight: 400;
