@@ -38,7 +38,7 @@
           {{ end }}
         </div>
         <div class="row align-items-center justify-content-center w-auto">
-          <div class="col-md-9 text-left px-0">
+          <div class="col-md-9 text-left px-3 px-md-0">
             <div class="fs-5 fw-medium  bio-text mt-4">
               {{ .Content }}
             </div>
@@ -63,7 +63,7 @@
               {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
               <li class="mb-2 fs-5 homepage-link">
                 <a href="{{ .RelPermalink }}" class="fw-normal">{{ .Title }}</a>
-                <span class="text-muted ms-2 fs-6">{{ .Date.Format "Jan 2, 2006" }}</span>
+                <span class="text-muted ms-2 fs-6 text-nowrap">{{ .Date.Format "Jan 2, 2006" }}</span>
               </li>
               {{ end }}
               <li class="mt-3 homepage-link">
