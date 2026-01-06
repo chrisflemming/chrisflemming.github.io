@@ -54,6 +54,12 @@
   <link href="/fonts.css" rel="stylesheet">
   <link href="/styles.css" rel="stylesheet">
 
+  {{ with .Resources.Match "*.css" }}
+  {{ range . }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{ end }}
+  {{ end }}
+
     <script>
       document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {

@@ -1,0 +1,13 @@
+.blog-body img[src$="app_store_badge.svg"],
+.blog-body img[src$="google_play_badge.svg"] {
+  display: inline-block;
+  height: 56px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.blog-body p:has(img[src$="app_store_badge.svg"]),
+.blog-body p:has(img[src$="google_play_badge.svg"]) {
+  text-align: center;
+}

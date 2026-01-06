@@ -9,9 +9,7 @@
     }
 }
 
-[![Download on the App Store](app_store_badge.svg)](https://apps.apple.com/au/app/live-uv/id6504560554)
-
-*Android version is currently undergoing testing - please contact me (see contact details on the root page of this site) if you are interested in testing the Android version*
+[![Download on the App Store](app_store_badge.svg)](https://apps.apple.com/au/app/live-uv/id6504560554) [![Download on the Google Play Store](google_play_badge.svg)](https://play.google.com/store/apps/details?id=com.chrisflemming.liveuv) 
 
 In Australia we have the highest rate of skin cancer in the world. The sun, especially in summer, has an intensity that many people from the Northern Hemisphere would never have experienced. 
 
@@ -23,7 +21,7 @@ The Australian Radiation Protection and Nuclear Safety Agency (ARPANSA) have a f
 
 I wanted an easy way to refer to ARPANSA's data while on the go so I've written Live UV. This is a simple mobile application developed using React Native which will give you the latest UV index reading for the selected location. You can use this app to determine when it is safe to be outside in the sun. I hope you find it useful.
 
-The code is open source, check out the [github repository](https://github.com/chrisflemming/LiveUVApp) if you're interested.
+The code is open source, check out the [GitHub repository](https://github.com/chrisflemming/LiveUVApp) if you're interested.
 
 #### Privacy Policy {#privacy}
 The Live UV app does not collect or store any data from users.
