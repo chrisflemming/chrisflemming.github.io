@@ -1,0 +1,33 @@
+# Chris Flemming
+
+> Personal website of Chris Flemming — software engineer and engineering manager based in Australia.
+>
+> Topics: software engineering, engineering management, AI, data, geopolitics, climate, finance.
+
+## Canonical
+
+Base URL: https://chrisflemming.com/
+
+## Main sections
+
+- Home: https://chrisflemming.com/
+- Blog: https://chrisflemming.com/blog/
+- Projects: https://chrisflemming.com/projects/
+
+## Key pages
+
+- Live UV (project): https://chrisflemming.com/projects/live-uv/
+- Blog post — UNESCO World Heritage List TSP: https://chrisflemming.com/blog/20240915-whl-tsp/
+- Blog post — Live UV App (Android edition): https://chrisflemming.com/blog/20260106-live-uv-android/
+
+## Feeds and machine-readable indexes
+
+- Site feed (RSS): https://chrisflemming.com/index.xml
+- Blog feed (RSS): https://chrisflemming.com/blog/index.xml
+- Projects feed (RSS): https://chrisflemming.com/projects/index.xml
+- Sitemap: https://chrisflemming.com/sitemap.xml
+- Robots: https://chrisflemming.com/robots.txt
+
+## Source repository
+
+- https://github.com/chrisflemming/chrisflemming.github.io
