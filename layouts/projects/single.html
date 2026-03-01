@@ -10,14 +10,23 @@
         </div>
         <div class="col-12 col-md">
           <div class="text-center">
-            {{ with .Resources.Get .Params.headerImageFile }}
+            {{ $imageFile := .Params.headerDisplayImageFile | default .Params.headerImageFile }}
+            {{ with .Resources.Get $imageFile }}
+            {{ if eq .MediaType.SubType "svg" }}
+            <img
+              src="{{ .RelPermalink }}"
+              alt="{{ $.Params.headerImageCaption }}"
+              class="img-fluid project-hero-icon"
+              loading="eager">
+            {{ else }}
             {{ partial "responsive-image.html" (dict
               "resource" .
               "alt" $.Params.headerImageCaption
-              "class" "img-fluid"
+              "class" "img-fluid project-hero-icon"
               "loading" "eager"
               "sizes" "(max-width: 767px) 100vw, (max-width: 1199px) 80vw, 1024px"
             ) }}
+            {{ end }}
             {{ end }}
           </div>
         </div>

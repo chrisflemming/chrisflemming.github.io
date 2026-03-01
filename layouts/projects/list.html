@@ -21,7 +21,17 @@
                 </div>
               </div>
               <div class="col-4">
-                {{ with .Resources.Get .Params.headerImageFile }}
+                {{ $imageFile := .Params.headerDisplayImageFile | default .Params.headerImageFile }}
+                {{ with .Resources.Get $imageFile }}
+                {{ if eq .MediaType.SubType "svg" }}
+                <img
+                  src="{{ .RelPermalink }}"
+                  alt="{{ $page.Params.headerImageCaption }}"
+                  class="img-fluid"
+                  loading="lazy"
+                  width="200"
+                  height="200">
+                {{ else }}
                 {{ partial "responsive-image.html" (dict
                   "resource" .
                   "alt" $page.Params.headerImageCaption
@@ -33,6 +43,7 @@
                   "intrinsicVariant" "small"
                   "sizes" "(max-width: 576px) 33vw, (max-width: 768px) 25vw, 200px"
                 ) }}
+                {{ end }}
                 {{ end }}
               </div>
             </div>

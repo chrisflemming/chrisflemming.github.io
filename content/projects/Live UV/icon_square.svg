@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="600" height="600" viewBox="-30 -30 60 60" fill="#fcdf03">
+  <rect x="-30" y="-30" width="60" height="60" fill="blue"/>
+  <g id="x"><g id="y">
+    <path id="z" d="m8,0-8,30-8-30 8-30"/>
+    <use xlink:href="#z" transform="rotate(15)"/>
+    <use xlink:href="#z" transform="rotate(30)"/>
+    <use xlink:href="#z" transform="rotate(45)"/></g>
+  <use xlink:href="#y" transform="rotate(60)"/>
+  <use xlink:href="#y" transform="rotate(120)"/>
+  <use xlink:href="#y" transform="rotate(180)"/>
+  <use xlink:href="#y" transform="rotate(240)"/>
+  <use xlink:href="#y" transform="rotate(300)"/></g>
+  <circle stroke="blue" stroke-width="1" r="16"/>
+  <g fill="blue" transform="translate(-10.03857421875 6.0107421875)">
+    <g transform="scale(0.0068359375 -0.0068359375)">
+      <path d="M763 -24Q587 -24 455.5 45.0Q324 114 252.0 234.0Q180 354 180 507V1490H370V522Q370 415 417.5 331.5Q465 248 553.0 200.0Q641 152 763 152Q885 152 972.5 200.0Q1060 248 1107.0 331.5Q1154 415 1154 522V1490H1344V507Q1344 354 1272.0 234.0Q1200 114 1069.5 45.0Q939 -24 763 -24Z"/>
+      <path transform="translate(1524 0)" d="M600 0 52 1490H252L567 606Q592 537 627.5 425.5Q663 314 710 154Q757 318 792.5 427.5Q828 537 852 606L1159 1490H1361L819 0Z"/>
+    </g>
+  </g>
+</svg>

@@ -66,6 +66,11 @@ article img {
   border-radius: 10%;
 }
 
+.project-hero-icon {
+  width: min(100%, 320px);
+  height: auto;
+}
+
 nav .navbar-brand {
     font-family: "JetBrains Mono", monospace;
     font-weight: 400;
