@@ -1,0 +1,6 @@
+{{ $page := . }}
+{{ with $page.Params.headerImageFile }}
+  {{ with $page.Resources.Get . }}
+    {{ .RelPermalink }}
+  {{ end }}
+{{ end }}

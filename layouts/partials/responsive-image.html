@@ -1,0 +1,45 @@
+{{ $resource := .resource }}
+{{ $alt := .alt | default "" }}
+{{ $class := .class | default "img-fluid" }}
+{{ $sizes := .sizes | default "(max-width: 767px) 100vw, 1024px" }}
+{{ $loading := .loading | default "lazy" }}
+{{ $smallWidth := .smallWidth | default "400x" }}
+{{ $mediumWidth := .mediumWidth | default "800x" }}
+{{ $largeWidth := .largeWidth | default "1024x" }}
+{{ $srcVariant := .srcVariant | default "medium" }}
+{{ $intrinsicVariant := .intrinsicVariant | default "large" }}
+
+{{ with $resource }}
+  {{ $smallJpeg := .Resize $smallWidth }}
+  {{ $mediumJpeg := .Resize $mediumWidth }}
+  {{ $largeJpeg := .Resize $largeWidth }}
+  {{ $smallWebp := .Resize (printf "%s webp" $smallWidth) }}
+  {{ $mediumWebp := .Resize (printf "%s webp" $mediumWidth) }}
+  {{ $largeWebp := .Resize (printf "%s webp" $largeWidth) }}
+  {{ $jpegVariants := dict "small" $smallJpeg "medium" $mediumJpeg "large" $largeJpeg }}
+  {{ $srcJpeg := index $jpegVariants $srcVariant }}
+  {{ $intrinsicJpeg := index $jpegVariants $intrinsicVariant }}
+
+  <picture>
+    <source
+      type="image/webp"
+      srcset="
+        {{ $smallWebp.RelPermalink }} {{ $smallWebp.Width }}w,
+        {{ $mediumWebp.RelPermalink }} {{ $mediumWebp.Width }}w,
+        {{ $largeWebp.RelPermalink }} {{ $largeWebp.Width }}w"
+      sizes="{{ $sizes }}">
+
+    <img
+      src="{{ $srcJpeg.RelPermalink }}"
+      srcset="
+        {{ $smallJpeg.RelPermalink }} {{ $smallJpeg.Width }}w,
+        {{ $mediumJpeg.RelPermalink }} {{ $mediumJpeg.Width }}w,
+        {{ $largeJpeg.RelPermalink }} {{ $largeJpeg.Width }}w"
+      sizes="{{ $sizes }}"
+      class="{{ $class }}"
+      alt="{{ $alt }}"
+      loading="{{ $loading }}"
+      width="{{ $intrinsicJpeg.Width }}"
+      height="{{ $intrinsicJpeg.Height }}">
+  </picture>
+{{ end }}

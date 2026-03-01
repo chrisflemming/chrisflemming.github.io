@@ -1,7 +1,9 @@
 {
     "title": "Live UV App Android Edition",
+    "description": "The Android edition of Live UV is now available on the Google Play Store.",
     "date": "2026-01-06",
     "params" : {
+        "subtitle": "Now available on Google Play",
         "headerImageFile": "image.png",
         "headerImageCaption": "Australian summer at the beach"
     }

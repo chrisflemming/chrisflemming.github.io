@@ -1,6 +1,7 @@
 baseURL = 'https://chrisflemming.com/'
-languageCode = 'en-us'
+languageCode = 'en-au'
 title = 'Chris Flemming'
 pluralizelisttitles = false
 enableRobotsTXT = true
 enableEmoji = true
+disableKinds = ['taxonomy', 'term']

@@ -1,19 +1,23 @@
 {{ partial "head.html" . }}
 
-
 <main role="main" class="container-fluid">
   <div class="main-content">
     <div class="container text-left">
       <div class="row justify-content-between">
         <div class="col-12 col-md">
           <h1 class="fw-medium">{{ .Title }}</h1>
-          <h3 class="fw-lighter">{{ .Params.subtitle }}</h2>
+          <h3 class="fw-lighter">{{ .Params.subtitle }}</h3>
         </div>
         <div class="col-12 col-md">
           <div class="text-center">
-            {{ $image := .Resources.Get .Params.headerImageFile }}
-            {{ if $image }}
-            <img src="{{ $image.Permalink }}" alt="{{ .Params.headerImageCaption }}" class="img-fluid" />
+            {{ with .Resources.Get .Params.headerImageFile }}
+            {{ partial "responsive-image.html" (dict
+              "resource" .
+              "alt" $.Params.headerImageCaption
+              "class" "img-fluid"
+              "loading" "eager"
+              "sizes" "(max-width: 767px) 100vw, (max-width: 1199px) 80vw, 1024px"
+            ) }}
             {{ end }}
           </div>
         </div>
