@@ -4,7 +4,12 @@
 <head>
   {{ $title := .Title }}
   {{ $description := .Description | default .Summary | default .Site.Title }}
-  {{ $image := partial "page-image.html" . }}
+  {{ $image := "" }}
+  {{ with .Params.headerImageFile }}
+  {{ with $.Resources.Get . }}
+  {{ $image = .Permalink }}
+  {{ end }}
+  {{ end }}
   {{ $ogType := cond .IsPage "article" "website" }}
   {{ if eq $title .Site.Title }}
   <title>{{ $title }}</title>
