@@ -5,7 +5,7 @@
     "params" : {
         "subtitle": "There was a clear winner",
         "headerImageFile": "image.png",
-        "headerImageCaption": "Editorial collage of bank statements, charts, coffee, and fast food around an analysis dashboard"
+        "headerImageCaption": "Futuristic robot analysing spending data"
     }
 }
 
