@@ -26,7 +26,7 @@
   <meta property="og:title" content="{{ $title }}">
   <meta property="og:description" content="{{ $description }}">
   {{ if $image }}
-  <meta property="og:image" content="{{ absURL $image }}">
+  <meta property="og:image" content="{{ $image }}">
   {{ end }}
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:type" content="{{ $ogType }}">
@@ -39,7 +39,7 @@
   <meta name="twitter:title" content="{{ $title }}">
   <meta name="twitter:description" content="{{ $description }}">
   {{ if $image }}
-  <meta name="twitter:image" content="{{ absURL $image }}">
+  <meta name="twitter:image" content="{{ $image }}">
   {{ end }}
 
   <link rel="preload" href="/InterVariable.woff2" as="font" type="font/woff2" crossorigin>

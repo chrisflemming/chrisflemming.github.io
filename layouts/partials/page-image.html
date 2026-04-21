@@ -1,6 +1,1 @@
-{{ $page := . }}
-{{ with $page.Params.headerImageFile }}
-  {{ with $page.Resources.Get . }}
-    {{ .RelPermalink }}
-  {{ end }}
-{{ end }}
+{{ with .Params.headerImageFile }}{{ with $.Resources.Get . }}{{ .Permalink }}{{ end }}{{ end }}
